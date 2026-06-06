@@ -3,236 +3,262 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Desenvolvimento Web</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-     rel="stylesheet">
-     <link rel="stylesheet" href="style.css">
-
+    <title>Portal EW1MB - Engenharia de Software</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-marinho border-bottom border-body py-4" data-bs-theme="dark">
-      <div class="container"> <a class="navbar-brand fw-bold" href="#">Portal Ew1mb</a>
-
-        <button class="navbar-toggler" 
-                type="button" 
-                data-bs-toggle="collapse" 
-                data-bs-target="#navBarPrincipal" 
-                aria-controls="navBarPrincipal" 
-                aria-expanded="false" 
-                aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navBarPrincipal">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#recursos">Recursos</a>
-            </li>
+    <!-- NAVEGAÇÃO -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h2>EW1MB</h2>
+                <span class="brand-subtitle">Engenharia de Software</span>
+            </div>
             
-            <li class="nav-item">
-                <a class="nav-link" href="#contato">Contato</a>
-            </li>
-          </ul>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active" data-section="home">Início</a>
+                <a href="#recursos" class="nav-link" data-section="recursos">Recursos</a>
+                <a href="#contato" class="nav-link" data-section="contato">Contato</a>
+            </div>
 
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Pesquisar..." aria-label="Search">
-            <button class="btn btn-outline-light" type="submit">Buscar</button>
-          </form>
+            <div class="nav-actions">
+                <button id="themeToggle" class="btn-theme" title="Alternar modo escuro">
+                    <i class="bi bi-moon-fill"></i>
+                </button>
+                <button id="menuToggle" class="btn-menu">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
         </div>
-
-      </div>
     </nav>
-    
 
-<header class="hero-premium d-flex align-items-center">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-7 text-white">
-                <span class="badge bg-primary mb-3 px-3 py-2">Engenharia de Software</span>
-                <h1 class="display-2 fw-bold mb-4">Central de <span class="text-info">Links</span></h1>
-                <p class="lead mb-5 opacity-75">Repositório unificado de materiais e avisos da turma de engenharia de software Ew1mb.</p>
-                <div class="d-flex gap-3">
-                    <a href="#contato" class="btn btn-primary btn-lg rounded-pill px-5 shadow">Começar</a>
-                   
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-badge">Bem-vindo</span>
+                <h1>Central de Recursos e Materiais</h1>
+                <p>Acesso único a todos os links, arquivos e prazos importantes da turma de Engenharia de Software.</p>
+                <div class="hero-buttons">
+                    <a href="#recursos" class="btn btn-primary">Explorar Recursos</a>
+                    <a href="#contato" class="btn btn-secondary">Fale Conosco</a>
                 </div>
             </div>
-            <div class="col-lg-5 mt-5 mt-lg-0">
-        <div class="hero-glass-card shadow-lg p-4">
-        <img src="IMG/coding-on-laptop-stockcake.webp" class="img-fluid rounded shadow img-hero-ajustada" alt="pczão">
-        </div>
-        </div>
+            <div class="hero-image">
+                <img src="IMG/coding-on-laptop-stockcake.webp" alt="Desenvolvimento Web">
             </div>
         </div>
-    </div>
-</header>
+    </section>
 
-<section id="recursos" class="py-5 bg-light">
-    <div class="container py-5">
-        <div class="text-center mb-5">
-            <h6 class="text-primary fw-bold text-uppercase">Materiais e Avisos</h6>
-            <h2 class="display-5 fw-bold">Recursos Relevantes</h2>
-            <p class="lead text-muted">Acesse links, arquivos e materiais importantes com prazos de entrega.</p>
-        </div>
-        <div class="row g-4">
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">Projeto Final</h5>
-                        <p class="card-text">Link para o repositório do projeto final de Engenharia de Software.</p>
-                        <p class="text-muted small">Prazo: 15 de Maio de 2026</p>
-                        <a href="#" class="btn btn-primary">Acessar</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">Apostila de UML</h5>
-                        <p class="card-text">Arquivo PDF com diagramas UML essenciais.</p>
-                        <p class="text-muted small">Prazo: Disponível até 30 de Abril de 2026</p>
-                        <a href="#" class="btn btn-primary">Download</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">Vídeo Aula - Scrum</h5>
-                        <p class="card-text">Vídeo explicativo sobre metodologias ágeis.</p>
-                        <p class="text-muted small">Prazo: Assistir até 10 de Maio de 2026</p>
-                        <a href="#" class="btn btn-primary">Assistir</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">Template de Relatório</h5>
-                        <p class="card-text">Modelo Word para relatórios de projeto.</p>
-                        <p class="text-muted small">Prazo: Entrega em 20 de Maio de 2026</p>
-                        <a href="#" class="btn btn-primary">Baixar</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">Forum de Discussão</h5>
-                        <p class="card-text">Link para o fórum da turma para dúvidas.</p>
-                        <p class="text-muted small">Prazo: Sempre disponível</p>
-                        <a href="#" class="btn btn-primary">Acessar</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">Calendário Acadêmico</h5>
-                        <p class="card-text">PDF com todas as datas importantes.</p>
-                        <p class="text-muted small">Prazo: Verificar regularmente</p>
-                        <a href="#" class="btn btn-primary">Visualizar</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<section id="tabela" class="py-5">
-    <div class="container">
-        <div class="text-center mb-4">
-            <h3 class="fw-bold">Tabela de Prazos</h3>
-            <p class="text-muted">Resumo rápido dos prazos e ações mais importantes.</p>
-        </div>
-        <div class="table-responsive shadow-sm rounded">
-            <table class="table table-striped align-middle mb-0">
-                <thead class="table-dark">
-                    <tr>
-                        <th>Recurso</th>
-                        <th>Tipo</th>
-                        <th>Prazo</th>
-                        <th>Ação</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Projeto Final</td>
-                        <td>Repositório</td>
-                        <td>15/05/2026</td>
-                        <td><a href="#" class="btn btn-sm btn-outline-primary">Abrir</a></td>
-                    </tr>
-                    <tr>
-                        <td>Apostila de UML</td>
-                        <td>PDF</td>
-                        <td>30/04/2026</td>
-                        <td><a href="#" class="btn btn-sm btn-outline-primary">Download</a></td>
-                    </tr>
-                    <tr>
-                        <td>Vídeo Aula - Scrum</td>
-                        <td>Vídeo</td>
-                        <td>10/05/2026</td>
-                        <td><a href="#" class="btn btn-sm btn-outline-primary">Assistir</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-</section>
-
-<section id="contato" class="contact-section bg-white py-5">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-6 mb-4 mb-md-0">
-                <h3 class="fw-bold">Contato</h3>
-                <p class="text-muted">Dúvidas, sugestões ou avisos? Entre em contato conosco.</p>
-                <ul class="list-unstyled">
-                    <li class="mb-2"><i class="bi bi-envelope-fill me-2"></i> contato@exemplo.com</li>
-                    <li><i class="bi bi-telephone-fill me-2"></i> (11) 99999-9999</li>
-                </ul>
+    <!-- SEÇÃO DE RECURSOS -->
+    <section id="recursos" class="resources">
+        <div class="container">
+            <div class="section-header">
+                <h2>Recursos Disponíveis</h2>
+                <p>Acesse materiais, arquivos e links com prazos de entrega</p>
             </div>
-            <div class="col-md-6">
-                <form class="row g-2" aria-label="Formulário de contato">
-                    <div class="col-12"><input class="form-control" type="text" placeholder="Nome" required></div>
-                    <div class="col-12"><input class="form-control" type="email" placeholder="Email" required></div>
-                    <div class="col-12"><textarea class="form-control" rows="4" placeholder="Mensagem"></textarea></div>
-                    <div class="col-12 text-end"><button class="btn btn-primary">Enviar</button></div>
+
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="card-icon">
+                        <i class="bi bi-folder-fill"></i>
+                    </div>
+                    <h3>Projeto Final</h3>
+                    <p class="card-description">Repositório com o projeto final de Engenharia de Software</p>
+                    <p class="card-deadline">📅 Prazo: 15 de Maio de 2026</p>
+                    <a href="#" class="btn btn-outline">Acessar</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="card-icon">
+                        <i class="bi bi-file-pdf-fill"></i>
+                    </div>
+                    <h3>Apostila de UML</h3>
+                    <p class="card-description">Diagramas UML essenciais e fundamentos</p>
+                    <p class="card-deadline">📅 Prazo: 30 de Abril de 2026</p>
+                    <a href="#" class="btn btn-outline">Download</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="card-icon">
+                        <i class="bi bi-play-circle-fill"></i>
+                    </div>
+                    <h3>Vídeo Aula - Scrum</h3>
+                    <p class="card-description">Metodologias ágeis e processos de desenvolvimento</p>
+                    <p class="card-deadline">📅 Prazo: 10 de Maio de 2026</p>
+                    <a href="#" class="btn btn-outline">Assistir</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="card-icon">
+                        <i class="bi bi-file-word-fill"></i>
+                    </div>
+                    <h3>Template de Relatório</h3>
+                    <p class="card-description">Modelo Word para relatórios de projeto</p>
+                    <p class="card-deadline">📅 Prazo: 20 de Maio de 2026</p>
+                    <a href="#" class="btn btn-outline">Baixar</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="card-icon">
+                        <i class="bi bi-chat-left-text-fill"></i>
+                    </div>
+                    <h3>Fórum de Discussão</h3>
+                    <p class="card-description">Espaço para dúvidas e discussões da turma</p>
+                    <p class="card-deadline">📅 Sempre disponível</p>
+                    <a href="#" class="btn btn-outline">Acessar</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="card-icon">
+                        <i class="bi bi-calendar-event-fill"></i>
+                    </div>
+                    <h3>Calendário Acadêmico</h3>
+                    <p class="card-description">Datas importantes e eventos da turma</p>
+                    <p class="card-deadline">📅 Verificar regularmente</p>
+                    <a href="#" class="btn btn-outline">Visualizar</a>
+                </div>
+            </div>
+
+            <!-- TABELA RESUMIDA -->
+            <div class="section-header" style="margin-top: 60px;">
+                <h2>Resumo de Prazos</h2>
+                <p>Tabela rápida dos próximos compromissos</p>
+            </div>
+
+            <div class="table-wrapper">
+                <table class="deadline-table">
+                    <thead>
+                        <tr>
+                            <th>Recurso</th>
+                            <th>Tipo</th>
+                            <th>Prazo</th>
+                            <th>Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Projeto Final</td>
+                            <td><span class="badge badge-folder">Repositório</span></td>
+                            <td>15/05/2026</td>
+                            <td><a href="#" class="btn btn-small">Abrir</a></td>
+                        </tr>
+                        <tr>
+                            <td>Apostila de UML</td>
+                            <td><span class="badge badge-pdf">PDF</span></td>
+                            <td>30/04/2026</td>
+                            <td><a href="#" class="btn btn-small">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td>Vídeo Aula - Scrum</td>
+                            <td><span class="badge badge-video">Vídeo</span></td>
+                            <td>10/05/2026</td>
+                            <td><a href="#" class="btn btn-small">Assistir</a></td>
+                        </tr>
+                        <tr>
+                            <td>Template de Relatório</td>
+                            <td><span class="badge badge-word">Word</span></td>
+                            <td>20/05/2026</td>
+                            <td><a href="#" class="btn btn-small">Baixar</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SEÇÃO DE CONTATO -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Entre em Contato</h2>
+                <p>Dúvidas, sugestões ou avisos? Nos procure</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="bi bi-envelope-fill"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contato@ew1mb.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="bi bi-telephone-fill"></i>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>(11) 9999-9999</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <div>
+                            <h4>Localização</h4>
+                            <p>São Paulo, SP</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Assunto</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
                 </form>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<footer class="bg-dark text-white pt-5 pb-3">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <h5 class="fw-bold mb-4">Portal do Engenheiro de Software</h5>
-                <p class="opacity-50">Seu espaço para aprender e crescer na área de software.</p>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>EW1MB</h3>
+                    <p>Portal centralizado para a turma de Engenharia de Software</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#recursos">Recursos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="#" title="GitHub"><i class="bi bi-github"></i></a>
+                        <a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" title="Discord"><i class="bi bi-discord"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-2 mb-4">
-                <h6 class="fw-bold">Links</h6>
-                <ul class="list-unstyled opacity-75">
-                    <li><a href="#" class="text-white text-decoration-none">Home</a></li>
-                    <li><a href="#" class="text-white text-decoration-none">Preços</a></li>
-                </ul>
-            </div>
-            <div class="col-md-6 mb-4 text-md-end">
-                <h6 class="fw-bold mb-4">Mande-me uma mensagem</h6>
-                <form class="d-flex justify-content-md-end gap-2">
-                    <input type="email" class="form-control w-50" placeholder="Seu melhor e-mail">
-                    <button class="btn btn-primary">
-                        Enviar
-                    </button>
-                </form>
+            <div class="footer-bottom">
+                <p>&copy; 2026 EW1MB. Todos os direitos reservados.</p>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
